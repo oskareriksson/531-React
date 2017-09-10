@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Container, Row} from "reactstrap";
 import Header from "../components/Header";
 import LiftStats from "../containers/LiftStats";
 import WeightCalc from "../containers/WeightCalc";
@@ -9,7 +10,14 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <LiftStats />
+        <Container>
+          <Row>
+            <LiftStats title="Overhead press"/>
+            <LiftStats title="Squat"/>
+            <LiftStats title="Bench press"/>
+            <LiftStats title="Deadlift"/>
+          </Row>
+        </Container>
         <WeightCalc />
       </div>
     );
