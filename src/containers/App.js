@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {Container, Row} from "reactstrap";
 import Header from "../components/Header";
-import LiftStats from "../containers/LiftStats";
+import Exercise from "../containers/Exercise";
 import WeightCalc from "../containers/WeightCalc";
 import './App.css';
 
@@ -12,10 +12,10 @@ class App extends Component {
         <Header />
         <Container>
           <Row>
-            <LiftStats title="Overhead press"/>
-            <LiftStats title="Squat"/>
-            <LiftStats title="Bench press"/>
-            <LiftStats title="Deadlift"/>
+            <Exercise title="Overhead press"/>
+            <Exercise title="Squat"/>
+            <Exercise title="Bench press"/>
+            <Exercise title="Deadlift"/>
           </Row>
         </Container>
         <WeightCalc />
