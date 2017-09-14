@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {Container, Row} from "reactstrap";
 import Header from "../components/Header";
 import Exercise from "../containers/Exercise";
-import WeightCalc from "../containers/WeightCalc";
+import WeightCalc from "../containers/WeightCalc/WeightCalc";
 import './App.css';
 
 class App extends Component {
