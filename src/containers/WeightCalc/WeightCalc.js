@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import {Container, Row, Col, Button, Form, FormGroup, Label, Input, FormText} from "reactstrap";
+import CalcColumn from "./CalcColumn";
 
 //Stateful component
 class WeightCalc extends Component{
@@ -30,58 +31,20 @@ class WeightCalc extends Component{
           </Col>
         </Row>
         <Row className="align-items-center">
-          <Col xs="6">
-            <Form>
-              <fieldset disabled>
-                <FormGroup>
-                  <Label for="fifty-percent-1rm">50% of 1RM</Label>
-                  <Input type="text" id="fifty-percent-1rm"/>
-                </FormGroup>
-                <FormGroup>
-                  <Label for="fiftyfive-percent-1rm">55% of 1RM</Label>
-                  <Input type="text" id="fiftyfive-percent-1rm"/>
-                </FormGroup>
-                <FormGroup>
-                  <Label for="sixty-percent-1rm">60% of 1RM</Label>
-                  <Input type="text" id="sixty-percent-1rm"/>
-                </FormGroup>
-                <FormGroup>
-                  <Label for="sixtyfive-percent-1rm">65% of 1RM</Label>
-                  <Input type="text" id="sixtyfive-percent-1rm"/>
-                </FormGroup>
-                <FormGroup>
-                  <Label for="seventy-percent-1rm">70% of 1RM</Label>
-                  <Input type="text" id="seventy-percent-1rm"/>
-                </FormGroup>
-              </fieldset>
-            </Form>
-          </Col>
-          <Col xs="6">
-            <Form>
-              <fieldset disabled>
-                <FormGroup>
-                  <Label for="seventyfive-percent-1rm">75% of 1RM</Label>
-                  <Input type="text" id="seventyfive-percent-1rm"/>
-                </FormGroup>
-                <FormGroup>
-                  <Label for="eighty-percent-1rm">80% of 1RM</Label>
-                  <Input type="text" id="eighty-percent-1rm"/>
-                </FormGroup>
-                <FormGroup>
-                  <Label for="eightyfive-percent-1rm">85% of 1RM</Label>
-                  <Input type="text" id="eightyfive-percent-1rm"/>
-                </FormGroup>
-                <FormGroup>
-                  <Label for="ninety-percent-1rm">90% of 1RM</Label>
-                  <Input type="text" id="ninety-percent-1rm"/>
-                </FormGroup>
-                <FormGroup>
-                  <Label for="ninetyfive-percent-1rm">95% of 1RM</Label>
-                  <Input type="text" id="ninetyfive-percent-1rm" />
-                </FormGroup>
-              </fieldset>
-            </Form>
-          </Col>
+          <CalcColumn
+            field1="fifty-percent-1rm"
+            field2="fiftyfive-percent-1rm"
+            field3="sixty-percent-1rm"
+            field4="sixtyfive-percent-1rm"
+            field5="seventy-percent-1rm"
+          />
+          <CalcColumn
+            field1="seventyfive-percent-1rm"
+            field2="eighty-percent-1rm"
+            field3="eightyfive-percent-1rm"
+            field4="ninety-percent-1rm"
+            field5="ninetyfive-percent-1rm"
+          />
         </Row>
       </Container>
     );
