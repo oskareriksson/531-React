@@ -8,23 +8,23 @@ class CalcColumn extends Component {
         <Form>
           <fieldset disabled>
             <FormGroup>
-              <Label for={this.props.field1}>50% of 1RM</Label>
+              <Label for={this.props.field1}>{this.props.name1}</Label>
               <Input type="text" id={this.props.field1}/>
             </FormGroup>
             <FormGroup>
-              <Label for={this.props.field2}>55% of 1RM</Label>
+              <Label for={this.props.field2}>{this.props.name2}</Label>
               <Input type="text" id={this.props.field2}/>
             </FormGroup>
             <FormGroup>
-              <Label for={this.props.field3}>60% of 1RM</Label>
+              <Label for={this.props.field3}>{this.props.name3}</Label>
               <Input type="text" id={this.props.field3}/>
             </FormGroup>
             <FormGroup>
-              <Label for={this.props.field4}>65% of 1RM</Label>
+              <Label for={this.props.field4}>{this.props.name4}</Label>
               <Input type="text" id={this.props.field4}/>
             </FormGroup>
             <FormGroup>
-              <Label for={this.props.field5}>70% of 1RM</Label>
+              <Label for={this.props.field5}>{this.props.name5}</Label>
               <Input type="text" id={this.props.field5}/>
             </FormGroup>
           </fieldset>

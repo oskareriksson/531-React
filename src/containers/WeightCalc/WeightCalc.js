@@ -37,6 +37,11 @@ class WeightCalc extends Component{
             field3="sixty-percent-1rm"
             field4="sixtyfive-percent-1rm"
             field5="seventy-percent-1rm"
+            name1="50% of 1RM"
+            name2="55% of 1RM"
+            name3="60% of 1RM"
+            name4="65% of 1RM"
+            name5="70% of 1RM"
           />
           <CalcColumn
             field1="seventyfive-percent-1rm"
@@ -44,6 +49,11 @@ class WeightCalc extends Component{
             field3="eightyfive-percent-1rm"
             field4="ninety-percent-1rm"
             field5="ninetyfive-percent-1rm"
+            name1="75% of 1RM"
+            name2="80% of 1RM"
+            name3="85% of 1RM"
+            name4="90% of 1RM"
+            name5="95% of 1RM"
           />
         </Row>
       </Container>
